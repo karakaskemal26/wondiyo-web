@@ -4,10 +4,10 @@ import {
     CartesianGrid, Tooltip, ResponsiveContainer, Legend
 } from 'recharts';
 
-const KART_URL = 'https://raw.githubusercontent.com/camelbox27-lab/oddsy-data/main/kart.json';
-const KORNER_URL = 'https://raw.githubusercontent.com/camelbox27-lab/oddsy-data/main/korner.json';
-const DROPPING_URL = 'https://raw.githubusercontent.com/camelbox27-lab/oddsy-data/main/data/droppingOdds.json';
-const DAILY_URL = 'https://raw.githubusercontent.com/camelbox27-lab/oddsy-data/main/data/dailyChoices.json';
+const KART_URL = 'https://raw.githubusercontent.com/karakaskemal26/wondiyo-data/main/kart.json';
+const KORNER_URL = 'https://raw.githubusercontent.com/karakaskemal26/wondiyo-data/main/korner.json';
+const DROPPING_URL = 'https://raw.githubusercontent.com/karakaskemal26/wondiyo-data/main/data/droppingOdds.json';
+const DAILY_URL = 'https://raw.githubusercontent.com/karakaskemal26/wondiyo-data/main/data/dailyChoices.json';
 
 // Örnek başarı oranı verisi (gerçek veri entegrasyonu için dailyChoices geçmişi gerekir)
 const BASARI_MOCK = [

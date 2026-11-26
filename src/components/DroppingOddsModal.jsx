@@ -15,7 +15,7 @@ const DroppingOddsModal = ({ onClose }) => {
         setLoading(true);
         try {
             const ts = new Date().getTime();
-            const response = await fetch(`https://raw.githubusercontent.com/camelbox27-lab/oddsy-data/main/data/droppingOdds.json?t=${ts}`);
+            const response = await fetch(`https://raw.githubusercontent.com/karakaskemal26/wondiyo-data/main/data/droppingOdds.json?t=${ts}`);
             if (!response.ok) throw new Error('Data fetch failed');
             let data = await response.json();
 

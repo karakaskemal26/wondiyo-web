@@ -27,7 +27,7 @@ function Korner({ onBack }) {
         const fetchData = async () => {
             try {
                 // Korner verileri GitHub üzerinden çekiliyor
-                const res = await fetch('https://raw.githubusercontent.com/camelbox27-lab/oddsy-data/main/data/korner.json?t=' + Date.now());
+                const res = await fetch('https://raw.githubusercontent.com/karakaskemal26/wondiyo-data/main/data/korner.json?t=' + Date.now());
                 const data = await res.json();
                 if (data) setKornerData(data.data || data);
                 setLoading(false);

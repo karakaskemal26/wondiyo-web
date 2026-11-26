@@ -2,7 +2,7 @@ import { ArrowLeft, Search, Star, Trophy, Zap, Edit3 } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { trackEvent } from '../analytics';
 import { getTeamLogo, handleLogoError } from '../helper';
-const iddaaGecmisUrl = 'https://raw.githubusercontent.com/camelbox27-lab/oddsy-data/main/iddaa/gecmis/iddaagecmis.json';
+const iddaaGecmisUrl = 'https://raw.githubusercontent.com/karakaskemal26/wondiyo-data/main/iddaa/gecmis/iddaagecmis.json';
 
 // Lig listesi - YapayZeka ile aynı
 const LEAGUES = [
@@ -99,7 +99,7 @@ function ManuelIddaa({ onBack }) {
     useEffect(() => {
         const load = async () => {
             try {
-                const res = await fetch('https://raw.githubusercontent.com/camelbox27-lab/oddsy-data/main/bet365/gunlukmaclar.json');
+                const res = await fetch('https://raw.githubusercontent.com/karakaskemal26/wondiyo-data/main/bet365/gunlukmaclar.json');
                 if (res.ok) {
                     const text = await res.text();
                     const data = JSON.parse(text.replace(/:\s*NaN/g, ': null').replace(/:\s*-NaN/g, ': null'));
@@ -878,7 +878,7 @@ export default function ManuelAnaliz() {
 
         const loadLeagueData = async (leagueFile) => {
             try {
-                const response = await fetch(`https://raw.githubusercontent.com/camelbox27-lab/oddsy-data/main/ligler_json/${encodeURIComponent(leagueFile)}.json`);
+                const response = await fetch(`https://raw.githubusercontent.com/karakaskemal26/wondiyo-data/main/ligler_json/${encodeURIComponent(leagueFile)}.json`);
                 if (!response.ok) return null;
                 const text = await response.text();
                 const cleanedText = text.replace(/:\s*NaN/g, ': null').replace(/:\s*-NaN/g, ': null');

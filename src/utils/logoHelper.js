@@ -1,6 +1,6 @@
 // web-version/src/utils/logoHelper.js
 
-const GITHUB_URL = "https://raw.githubusercontent.com/camelbox27-lab/mac-tahmin-logolar/main/";
+const GITHUB_URL = "https://raw.githubusercontent.com/karakaskemal26/wondiyo-logolar/main/";
 
 // EŞLEŞTİRME HARİTASI
 const TEAM_MAP = {

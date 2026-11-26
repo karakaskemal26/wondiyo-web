@@ -27,7 +27,7 @@ function Kart({ onBack }) {
         const fetchData = async () => {
             try {
                 // Kart verileri GitHub üzerinden çekiliyor
-                const res = await fetch('https://raw.githubusercontent.com/camelbox27-lab/oddsy-data/main/data/kart.json?t=' + Date.now());
+                const res = await fetch('https://raw.githubusercontent.com/karakaskemal26/wondiyo-data/main/data/kart.json?t=' + Date.now());
                 const data = await res.json();
                 if (data) setKartData(data.data || data);
                 setLoading(false);

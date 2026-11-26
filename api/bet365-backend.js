@@ -5,7 +5,7 @@ const NEON_DSN = process.env.NEON_DSN || 'postgresql://neondb_owner:npg_pBvPtI2f
 const TABLE = 'bet365_maclar';
 // Gunluk bulten GitHub'daki oddsy-data reposundan okunur (oddsy-data klasoru .vercelignore'da,
 // yani Vercel'e yuklenmiyor; ayrica boylece veri guncellemesi icin yeni deploy gerekmiyor).
-const FRONTEND_JSON_URL = 'https://raw.githubusercontent.com/camelbox27-lab/oddsy-data/main/bet365/gunlukmaclar.json';
+const FRONTEND_JSON_URL = 'https://raw.githubusercontent.com/karakaskemal26/wondiyo-data/main/bet365/gunlukmaclar.json';
 
 const pool = new Pool({ connectionString: NEON_DSN, max: 5 });
 

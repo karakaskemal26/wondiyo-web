@@ -2,8 +2,8 @@ import { ArrowLeft, Search, Star, Trophy, Zap } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { trackEvent } from '../analytics';
 import { getTeamLogo, handleLogoError } from '../helper';
-const BET365_DAILY_URL = 'https://raw.githubusercontent.com/camelbox27-lab/oddsy-data/main/bet365/gunlukmaclar.json';
-const IDDAA_DAILY_URL = 'https://raw.githubusercontent.com/camelbox27-lab/oddsy-data/main/iddaa/gunluk/gunlukmaclar.json';
+const BET365_DAILY_URL = 'https://raw.githubusercontent.com/karakaskemal26/wondiyo-data/main/bet365/gunlukmaclar.json';
+const IDDAA_DAILY_URL = 'https://raw.githubusercontent.com/karakaskemal26/wondiyo-data/main/iddaa/gunluk/gunlukmaclar.json';
 
 async function fetchRemoteJson(url) {
     const response = await fetch(url);
@@ -305,7 +305,7 @@ function YapayZekaIddaa({ onBack }) {
         setResults(null);
 
         try {
-            const response = await fetch('https://raw.githubusercontent.com/camelbox27-lab/oddsy-data/main/iddaa/gecmis/iddaagecmis.json');
+            const response = await fetch('https://raw.githubusercontent.com/karakaskemal26/wondiyo-data/main/iddaa/gecmis/iddaagecmis.json');
             if (!response.ok) throw new Error('İddaa verisi yüklenemedi.');
             const text = await response.text();
             const data = JSON.parse(text.replace(/:\s*NaN/g, ': null').replace(/:\s*-NaN/g, ': null'));
@@ -1131,7 +1131,7 @@ export default function YapayZeka() {
 
         const loadLeagueData = async (leagueFile) => {
             try {
-                const response = await fetch(`https://raw.githubusercontent.com/camelbox27-lab/oddsy-data/main/ligler_json/${encodeURIComponent(leagueFile)}.json`);
+                const response = await fetch(`https://raw.githubusercontent.com/karakaskemal26/wondiyo-data/main/ligler_json/${encodeURIComponent(leagueFile)}.json`);
                 if (!response.ok) return null;
                 const text = await response.text();
                 const cleanedText = text.replace(/:\s*NaN/g, ': null').replace(/:\s*-NaN/g, ': null');
@@ -1146,7 +1146,7 @@ export default function YapayZeka() {
             const inputOran2 = normalizeOdds(oran2);
 
             if (isIddaaSource) {
-                const response = await fetch('https://raw.githubusercontent.com/camelbox27-lab/oddsy-data/main/iddaa/gecmis/iddaagecmis.json');
+                const response = await fetch('https://raw.githubusercontent.com/karakaskemal26/wondiyo-data/main/iddaa/gecmis/iddaagecmis.json');
                 if (!response.ok) throw new Error('İddaa backend analizi çalışmadı.');
                 const text = await response.text();
                 const iddaaData = JSON.parse(text.replace(/:\s*NaN/g, ': null').replace(/:\s*-NaN/g, ': null'));

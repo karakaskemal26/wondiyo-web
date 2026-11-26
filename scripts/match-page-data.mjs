@@ -3,7 +3,7 @@
 
 // Arşivin okunacağı dal; test için VERI_DALI ile değiştirilebilir
 const DAL = process.env.VERI_DALI || 'main';
-const RAW = `https://raw.githubusercontent.com/camelbox27-lab/oddsy-data/${DAL}`;
+const RAW = `https://raw.githubusercontent.com/karakaskemal26/wondiyo-data/${DAL}`;
 export const ARSIV_INDEKS = `${RAW}/bet365/arsiv/index.json`;
 export const ARSIV_GUN = (gun) => `${RAW}/bet365/arsiv/${gun}.json`;
 

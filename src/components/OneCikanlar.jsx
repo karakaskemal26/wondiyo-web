@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 // (İY/MS ve 6+ gol). Veri, botun canli-kayit dalındaki günlük arşivinden
 // okunur; bu dal siteyi yeniden derletmez. Veri yoksa bileşen hiçbir şey
 // göstermez (ana sayfa eskisi gibi kalır).
-const ARSIV_URL = 'https://raw.githubusercontent.com/camelbox27-lab/oddsy-data/canli-kayit/oncesi/';
+const ARSIV_URL = 'https://raw.githubusercontent.com/karakaskemal26/wondiyo-data/canli-kayit/oncesi/';
 
 // Türkiye saatine göre bugünün tarihi: GG.AA.YYYY
 function bugunTR() {
